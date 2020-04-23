@@ -2,12 +2,10 @@
 <p><%= notice %></p>
 <table class="index_container">
   <tr>
-    <th>タイトル</th>
     <th>内容</th>
   </tr>
 <% @tweets.each do |tweet| %>
   <tr>
-    <td><%= tweet.title %></td>
     <td><%= tweet.content %></td>
     <td><%= link_to '詳細を確認' , tweet_path(tweet.id)%></td>
     <td><%= link_to 'つぶやきを編集する' , edit_tweet_path(tweet.id)%></td>
