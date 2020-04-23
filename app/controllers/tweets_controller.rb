@@ -3,5 +3,16 @@ class TweetsController < ApplicationController
   end
 
   def new
+    @tweet = Tweet.new
+  end
+
+  def create
+    Tweet.create(tweet_params)
+    redirect_to new_tweet_path
+  end
+
+  private
+  def tweet_params
+    params.require(:tweet).permit(:title,:content)
   end
 end
