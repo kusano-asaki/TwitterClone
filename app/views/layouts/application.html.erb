@@ -12,8 +12,12 @@
 
   <body>
     <header>
-      <div class="left">tubuyaku</div>
-      <div class="right"><%= link_to '投稿一覧', tweets_path %></div>
+      <ul class="header_menu">
+        <li class="header_list"><%= link_to 'tubuyaku', top_tweets_path%></li>
+        <li class="header_list"><%= link_to '新しくつぶやく', new_tweet_path %></li>
+        <li class="header_list"><%= link_to '投稿一覧', tweets_path %></li>
+      </ul>
+
     </header>
     <%= yield %>
     <footer>©Copyright 2020 kusano. All rights reserved.</footer>

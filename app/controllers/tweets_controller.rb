@@ -45,11 +45,14 @@ class TweetsController < ApplicationController
     render :new if @tweet.invalid?
   end
 
+  def top
+  end
+
   private
   def tweet_params
       params.require(:tweet).permit(:content)
   end
-  
+
   def set_tweet
     @tweet = Tweet.find(params[:id])
   end

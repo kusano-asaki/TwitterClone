@@ -1,18 +1,22 @@
 header {
   padding: 0.5em;
+  margin: 0 auto;
   color: #494949;
   background: #fffaf4;
   border-left: solid 5px #ffaf58;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
 }
 
-.left {
-  float: left;
+.header_menu {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
 }
 
-.right {
-  float: right;
+.header_list {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
 }
 
 footer {
